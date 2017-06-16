@@ -1,10 +1,10 @@
-## Hardware Requirements
+## Hardware requirements
 You'll need following to follow this guide
 - Based-station (Laptop)
 - One or more Parrot’s AR Drone 2.0
 - Wifi-router
 
-## Software Requirements
+## Software requirements
 You'll need following to follow this guide
 - This has been tested on Mac OS Sierra & Ubuntu 14.04, should work fine on Windows too
 - nodejs v8.1.0 [https://nodejs.org/en/](https://nodejs.org/en/)
