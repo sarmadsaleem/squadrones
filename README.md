@@ -10,6 +10,10 @@ You'll need following to follow this guide
 - nodejs v8.1.0 [https://nodejs.org/en/](https://nodejs.org/en/)
 - npm v5.0.3 (npm is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer.)
 
+## Libraries attribution
+- Node.js client for controlling Parrot AR Drone 2.0 [https://github.com/felixge/node-ar-drone](https://github.com/felixge/node-ar-drone)
+- Realtime video feed from Parrot AR 2 Drones [https://github.com/bkw/node-dronestream](https://github.com/bkw/node-dronestream)
+
 
 ## Getting started
 Before getting started, it’s important to know the default behaviour of Parrot’s AR Drone 2.0. It works by creating an open ad-hoc network which you can connect to using your smartphone. FreeFlight app uses this ad-hoc network to communicate with the drone. AR Drone runs stripped down variant of Linux called BusyBox which can allow us to telnet into the drone, tweak with configuration scripts and even allow for internet connectivity on the drone.
@@ -31,7 +35,7 @@ git clone https://github.com/sarmadsaleem/squadrones.git
 cd network_setup
 script/install
 ```
-- Connect drone to wifi network `squadrones`. Make sure to use unique <ip-address-to-be-alloted> for each drone. (to be done everytime you want your drone to connect to specified wifi network)
+- Connect drone to wifi network `squadrones`. Make sure to use unique ip address for each drone. (to be done everytime you want your drone to connect to specified wifi network)
 ```
 # script/connect "<essid>" -p "<password>" -a <ip-address-to-be-alloted> -d <droneip>
 script/connect script/connect "squadrones" -p "password" -a 192.168.1.10 -d 192.168.1.1
