@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="droneStream"></div>
+
+<script src="http://localhost:3003/dronestream/nodecopter-client.js"></script>
+<script>
+  // video canvas will auto-size to the DOM-node, or default to 640*360 if no size is set.
+  new NodecopterStream(document.getElementById("droneStream"), {port: 3003}); //+i
+</script>
+</body>
+</html>
