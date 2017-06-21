@@ -38,14 +38,14 @@ script/install
 - Connect drone to wifi network `squadrones`. Make sure to use unique ip address for each drone. (to be done everytime you want your drone to connect to specified wifi network)
 ```
 # script/connect "<essid>" -p "<password>" -a <ip-address-to-be-alloted> -d <droneip>
-script/connect script/connect "squadrones" -p "password" -a 192.168.1.10 -d 192.168.1.1
+script/connect "squadrones" -p "password" -a 192.168.1.10 -d 192.168.1.1
 ```
 - Connect your laptop to `squadrones` wifi network and verify if the drone is connected
 ```
 ping 192.168.1.10
 ```
 
-### Start the server, pull in dependencies and enjoy simple swarm interface
+### Pull in dependencies, start the server and enjoy simple swarm interface
 Navigate to root of repo and run following commands
 ```
 npm install
